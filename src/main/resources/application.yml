@@ -1,0 +1,11 @@
+
+#https://raw.githubusercontent.com/chupdachups/spring-cloud-eureka/main/src/main/resources/application.yml
+
+server:
+  port: ${service_port:8761}
+  
+spring:
+  application:
+    name: eureka
+  profiles:
+    active: ${profile:local}
